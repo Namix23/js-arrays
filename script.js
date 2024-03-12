@@ -28,3 +28,8 @@ console.log(fruits);
 fruits.pop();
 fruits.toSorted();
 console.log(fruits);
+
+let fruit = ["peach", "raspberry", "banana"];
+console.log(fruit.length);
+console.log(fruit[fruit.length-1]);
+
