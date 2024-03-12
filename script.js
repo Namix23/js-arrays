@@ -40,3 +40,35 @@ const spread = [...array1, ...array2];
 console.log(spread);
 
 console.log(spread.slice(2, 5));
+
+//object literal
+const human = {
+  firstName: "Nataly", 
+  lastName: "Namix", 
+  age: 31
+};
+
+//dot notation
+console.log (human.firstName);
+
+//bracket notation
+console.log(human[`firstName`]);
+
+//to use a function I create, I need to call it
+function sayHi(){
+  console.log("Hi!");
+  console.log("How are you?");
+};
+
+sayHi();
+
+//defining a function that takes input
+
+//parameters are the infoo a function wants
+//arguments are the info I supply when I call it
+
+function greetMe(firstName, lastName){
+  console.log(`Hello ${firstName} ${lastName}!`);
+  console.log("How are you?")
+};
+greetMe("Nataly", "Namix");
