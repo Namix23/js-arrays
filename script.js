@@ -33,3 +33,8 @@ let fruit = ["peach", "raspberry", "banana"];
 console.log(fruit.length);
 console.log(fruit[fruit.length-1]);
 
+const array1 = [10, 20, 30];
+const array2 = [40, 50, 60];
+
+const spread = [...array1, ...array2];
+console.log(spread);
