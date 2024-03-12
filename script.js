@@ -38,3 +38,5 @@ const array2 = [40, 50, 60];
 
 const spread = [...array1, ...array2];
 console.log(spread);
+
+console.log(spread.slice(2, 5));
