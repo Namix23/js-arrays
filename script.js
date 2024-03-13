@@ -42,17 +42,17 @@ console.log(spread);
 console.log(spread.slice(2, 5));
 
 //object literal
-const human = {
-  firstName: "Nataly", 
-  lastName: "Namix", 
-  age: 31
-};
+// const human = {
+//   firstName: "Nataly", 
+//   lastName: "Namix", 
+//   age: 31
+// };
 
-//dot notation
-console.log (human.firstName);
+// //dot notation
+// console.log (human.firstName);
 
-//bracket notation
-console.log(human[`firstName`]);
+// //bracket notation
+// console.log(human[`firstName`]);
 
 //to use a function I create, I need to call it
 function sayHi(){
@@ -72,3 +72,12 @@ function greetMe(firstName, lastName){
   console.log("How are you?")
 };
 greetMe("Nataly", "Namix");
+
+const human = {
+  firstName: "Nataly",
+  lastName: "Namix",
+  age: 31,
+  fullName: function () {
+    return this.firstName + "" + this.lastName;
+  },
+};
